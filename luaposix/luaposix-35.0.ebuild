@@ -24,12 +24,6 @@ src_compile() {
 }
 
 src_install() {
-	#LUA_LIBDIR="$($(tc-getPKG_CONFIG) --variable INSTALL_CMOD $(usex luajit 'luajit' 'lua'))"
-
-	#insinto "${LUA_LIBDIR#${EPREFIX}}"
-	#insopts -m755
-	#doins -r "${S}/linux/posix"
-	#lua build-aux/luke PREFIX=${EPREFIX}/usr install
 	lua build-aux/luke PREFIX=${ED}/usr install
 
 	default
