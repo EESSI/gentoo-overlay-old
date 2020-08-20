@@ -13,7 +13,10 @@ SRC_URI="https://github.com/keplerproject/lua-compat-5.2/archive/bitlib-${PV}.ta
 KEYWORDS="~amd64"
 READMES=( README.md )
 
-DEPENDS="dev-lang/lua:0="
+RDEPEND="dev-lang/lua:0="
+BDEPEND="${RDEPEND}"
+DEPEND="${RDEPEND}"
+
 LICENSE="MIT"
 SLOT="0"
 IUSE=""
