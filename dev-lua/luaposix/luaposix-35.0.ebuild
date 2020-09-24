@@ -10,7 +10,7 @@ SRC_URI="https://github.com/luaposix/luaposix/archive/v${PV}.tar.gz -> ${P}.tar.
 
 SLOT="0"
 LICENSE="public-domain"
-KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="~amd64 ~x86 ~arm64"
 IUSE="luajit"
 
 RDEPEND="dev-lang/lua:* dev-lua/bit32"
