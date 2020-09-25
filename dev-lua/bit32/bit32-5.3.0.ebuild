@@ -10,7 +10,7 @@ inherit toolchain-funcs
 DESCRIPTION="A Lua5.2+ bit manipulation library"
 HOMEPAGE="https://github.com/keplerproject/lua-compat-5.2"
 SRC_URI="https://github.com/keplerproject/lua-compat-5.2/archive/bitlib-${PV}.tar.gz"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~arm64"
 READMES=( README.md )
 
 RDEPEND="dev-lang/lua:0="
