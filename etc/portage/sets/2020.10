@@ -1,0 +1,5 @@
+app-editors/emacs
+app-editor/vim
+dev-util/strace
+app-admin/Lmod
+sys-apps/archspec
