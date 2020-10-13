@@ -1,6 +1,6 @@
 app-admin/Lmod
 app-editors/emacs
-app-editor/vim
+app-editors/vim
 dev-util/strace
 sys-apps/archspec
 sys-cluster/rdma-core
