@@ -3,3 +3,5 @@ app-editor/vim
 dev-util/strace
 app-admin/Lmod
 sys-apps/archspec
+sys-cluster/rdma-core
+sys-fabric/opa-psm2
