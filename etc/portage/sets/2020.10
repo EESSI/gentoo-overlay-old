@@ -2,6 +2,8 @@ app-admin/Lmod
 app-editors/emacs
 app-editors/vim
 dev-util/strace
+media-fonts/dejavu
+media-fonts/liberation-fonts
 sys-apps/archspec
 sys-cluster/rdma-core
 sys-fabric/opa-psm2
