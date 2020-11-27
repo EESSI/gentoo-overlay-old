@@ -6,5 +6,4 @@ media-fonts/dejavu
 media-fonts/liberation-fonts
 =sys-apps/archspec-0.1.2::eessi
 =sys-cluster/rdma-core-31.0::eessi
-=sys-fabric/opa-psm2-11.2.185::eessi
 sys-libs/pam
