@@ -1,4 +1,4 @@
-=app-admin/Lmod-8.4.5::eessi
+=app-admin/Lmod-8.4.16::eessi
 app-editors/emacs
 app-editors/vim
 dev-util/strace
