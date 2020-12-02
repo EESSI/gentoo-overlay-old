@@ -4,5 +4,3 @@ app-editors/vim
 media-fonts/dejavu
 media-fonts/liberation-fonts
 =sys-apps/archspec-0.1.2::eessi
-=sys-cluster/rdma-core-31.2::eessi
-sys-libs/pam
