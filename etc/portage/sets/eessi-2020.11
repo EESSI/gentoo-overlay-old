@@ -1,9 +1,6 @@
 =app-admin/Lmod-8.4.16::eessi
 app-editors/emacs
 app-editors/vim
-dev-util/strace
 media-fonts/dejavu
 media-fonts/liberation-fonts
 =sys-apps/archspec-0.1.2::eessi
-=sys-cluster/rdma-core-31.2::eessi
-sys-libs/pam
