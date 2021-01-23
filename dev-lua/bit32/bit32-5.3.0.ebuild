@@ -19,7 +19,7 @@ DEPEND="${RDEPEND}"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~arm64 ~x64-macos"
+KEYWORDS="~amd64 ~arm64 ~x64-macos ~ppc64"
 IUSE=""
 
 S="${WORKDIR}/lua-compat-5.2-bitlib-${PV}"
