@@ -1,0 +1,7 @@
+=app-admin/Lmod-8.4.16::eessi
+app-editors/emacs
+app-editors/vim
+=dev-lua/luafilesystem-1.8.0-r1
+media-fonts/dejavu
+media-fonts/liberation-fonts
+=sys-apps/archspec-0.1.2::eessi

@@ -12,7 +12,7 @@ SRC_URI="https://github.com/keplerproject/${PN}/archive/v${MY_PV}.tar.gz -> ${P}
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~arm64 ~hppa ~mips ~ppc ~ppc64 ~sparc ~x86"
+KEYWORDS="~amd64 ~arm ~arm64 ~hppa ~mips ~ppc ~ppc64 ~sparc ~x86 ~x64-macos"
 IUSE="doc luajit test"
 
 RESTRICT="!test? ( test )"
@@ -28,6 +28,11 @@ DEPEND="${RDEPEND}"
 S="${WORKDIR}/${PN}-${MY_PV}"
 
 src_configure() {
+	local LIB_OPTION="\$(LDFLAGS) -shared"
+	if [[ ${CHOST} == *darwin* ]]; then
+		LIB_OPTION=" -bundle -undefined dynamic_lookup #for MacOS X"
+	fi
+
 	cat > config <<-EOF
 		# Installation directories
 
@@ -42,7 +47,9 @@ src_configure() {
 		LUA_INC+=-I$($(tc-getPKG_CONFIG) --variable includedir $(usex luajit 'luajit' 'lua'))
 
 		# OS dependent
-		LIB_OPTION=\$(LDFLAGS) -shared
+		#LIB_OPTION=\$(LDFLAGS) -shared
+		#LIB_OPTION= -bundle -undefined dynamic_lookup #for MacOS X
+		LIB_OPTION=${LIB_OPTION}
 
 		LIBNAME=$T.so.$V
 
