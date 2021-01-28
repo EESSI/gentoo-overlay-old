@@ -9,7 +9,7 @@ SRC_URI="https://github.com/TACC/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~arm64 ~x64-macos"
+KEYWORDS="~amd64 ~arm64 ~x64-macos ~ppc64"
 IUSE=""
 
 DEPEND="dev-lua/luaposix
